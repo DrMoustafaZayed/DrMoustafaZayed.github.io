@@ -38,18 +38,38 @@
                     width: 50%;
                     }
                     </style>
-            <title>Dr Moustafa Zayed's Portfolio</title>
+            <title>Dr. Moustafa Zayed</title>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script type="text/javascript">
+                function scrollto(div)
+                    {
+                    $('html,body').animate(
+                    {
+                        scrollTop: $("#"+div).offset().top
+                    },'slow');
+                    }
+                </script>
+            <link rel='shortcut icon' type='image/png' href='android-chrome-512x512.png' />
         </head>
         <body style="background-color: black;">
             <div class="topnav">
                 <a class="active" href="#home">Home</a>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
+                <a onclick="scrollto('contact');">Contact</a>
+                <a onclick="scrollto('about');">About</a>
                 <a href="/cv.pdf">CV</a>
             </div>
             <img src="me.jpg" style="max-width: 300px;width: 100%; padding: 30px;" class="center">
             <h1 style="color: rgb(179, 179, 179); font-size: 400%; font-family: sans-serif; text-align: center; padding: 50px;">Dr Moustafa Zayed</h1>
-            <h1 style="color: rgb(179, 179, 179); font-size: 200%; font-family: sans-serif; text-align: center;">Principal Structural Engineer</h1>
-            <p style="color: rgb(179, 179, 179); text-align: center; font-size: 150%; padding: 50px; text-align: center;">22 years of experience </p>
+            <div id="about">
+                <h1 style="color: rgb(179, 179, 179); font-size: 200%; font-family: sans-serif; text-align: center;">About</h1>
+                <p style="color: rgb(179, 179, 179); text-align: center; font-size: 150%; text-align: center;">22 years of experience </p>
+                <p style="color: rgb(179, 179, 179); text-align: center; font-size: 150%; padding: 50px; padding-top: 0px; text-align: center;"></p>
+            </div>
+            <div id="contact">
+                <h1 style="color: rgb(179, 179, 179); font-size: 200%; font-family: sans-serif; text-align: center;">Contact:</h1>
+                <p style="color: rgb(179, 179, 179); text-align: center; font-size: 150%; padding: 0px; text-align: center;">Tel: 00 971 52 490 0828</p>
+                <p style="color: rgb(179, 179, 179); text-align: center; font-size: 150%; padding: 0px; text-align: center;">Email: m_elghreab@yahoo.com</p>
+                <p style="color: rgb(179, 179, 179); text-align: center; font-size: 150%; padding: 0px; text-align: center;">Linkedin: <a href="https://www.linkedin.com/in/dr-moustafa-beshir-0b521045/" style="color: greenyellow; text-decoration: none;">Dr. Moustafa Beshir</a></p>
+            </div>
         </body>
     </html>
